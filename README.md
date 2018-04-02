@@ -1,5 +1,11 @@
 # Moltin Cart
 
+## Some screenshots to engage:
+### Home page
+![Branches](docs/images/home.png)
+### The cart
+![Branches](docs/images/cart.png)
+
 ## Project Setup
 I've used npm -v `5.6.0` and node -v `8.9.1`. And everything kinda works.
 I think it should work fine on higher version and may work on lower version, but I haven't test.
