@@ -1,0 +1,33 @@
+@import '../../styles/vars';
+.cart-product {
+	td {
+		&.-item {
+			> .item-wrapper {
+				display: flex;
+				.item-img {
+					min-width: 90px;
+					height: 55px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					img {
+						max-height: 100%;
+						max-width: 100%;
+					}
+					margin-right: 16px
+				}
+				.item-name {
+					color: $color-text-title;
+					font-weight: bold;
+				}
+				.item-description {
+					font-size: $size-font-small;
+					overflow: hidden;
+					display: -webkit-box;
+					-webkit-line-clamp: 3;
+					-webkit-box-orient: vertical;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+@mixin opaque-hoverable() {
+	opacity: .8;
+	transition: opacity .2s ease-in;
+	cursor: pointer;
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+}
+

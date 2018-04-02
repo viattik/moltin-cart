@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CartProduct /> Cart renders with an item 1`] = `
+<tr
+  className="cart-product"
+>
+  <td
+    className="-item"
+  >
+    <div
+      className="item-wrapper"
+    >
+      <div
+        className="item-img"
+      >
+        <img
+          src="img.png"
+        />
+      </div>
+      <div>
+        <div
+          className="item-name"
+        >
+          Test name
+        </div>
+        <div
+          className="item-description"
+        >
+          Test desc
+        </div>
+      </div>
+    </div>
+  </td>
+  <td
+    className="-price"
+  >
+    $10.00
+  </td>
+  <td
+    className="-qty"
+  >
+    <div
+      className="Select has-value Select--single"
+      style={undefined}
+    >
+      <input
+        disabled={false}
+        name="form-field-name"
+        type="hidden"
+        value="1"
+      />
+      <div
+        className="Select-control"
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        style={undefined}
+      >
+        <span
+          className="Select-multi-value-wrapper"
+          id="react-select-2--value"
+        >
+          <div
+            className="Select-value"
+            style={undefined}
+            title={undefined}
+          >
+            <span
+              aria-selected="true"
+              className="Select-value-label"
+              id="react-select-2--value-item"
+              role="option"
+            >
+              1
+            </span>
+          </div>
+          <div
+            aria-activedescendant="react-select-2--value"
+            aria-disabled="false"
+            aria-expanded={false}
+            aria-label={undefined}
+            aria-labelledby={undefined}
+            aria-owns=""
+            className="Select-input"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            style={
+              Object {
+                "border": 0,
+                "display": "inline-block",
+                "width": 1,
+              }
+            }
+            tabIndex={0}
+          />
+        </span>
+        <span
+          className="Select-arrow-zone"
+          onMouseDown={[Function]}
+        >
+          <span
+            className="Select-arrow"
+            onMouseDown={[Function]}
+          />
+        </span>
+      </div>
+    </div>
+  </td>
+  <td
+    className="-total"
+  >
+    $10.00
+  </td>
+  <td
+    className="-remove"
+  >
+    <a
+      className="icon-link"
+      href=""
+      onClick={[Function]}
+    >
+      <i
+        className="icon-remove-from-cart"
+      />
+      
+    </a>
+  </td>
+</tr>
+`;

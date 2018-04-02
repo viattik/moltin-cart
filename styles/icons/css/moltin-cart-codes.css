@@ -1,0 +1,10 @@
+
+.icon-add-to-cart:before { content: '\e800'; } /* '' */
+.icon-check-mark:before { content: '\e801'; } /* '' */
+.icon-delete-button:before { content: '\e802'; } /* '' */
+.icon-multiplication-sign:before { content: '\e803'; } /* '' */
+.icon-package-carrier:before { content: '\e804'; } /* '' */
+.icon-remove-from-cart:before { content: '\e805'; } /* '' */
+.icon-shopping-cart:before { content: '\e806'; } /* '' */
+.icon-transport:before { content: '\e807'; } /* '' */
+.icon-warning:before { content: '\e808'; } /* '' */

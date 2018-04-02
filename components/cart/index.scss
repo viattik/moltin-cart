@@ -1,0 +1,139 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+$bg-color: $color-mirage;
+$sidebar-icon-color: $color-scampi;
+$sidebar-text-color: $color-colonial-white;
+
+$sidebar-width: 180px;
+
+.cart {
+	background: $bg-color;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transform: translateX(calc(#{$sidebar-width} - 100%));
+	transition: transform .5s ease-in;
+	z-index: 100;
+
+	&-sidebar {
+		width: $sidebar-width;
+		display: flex;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		flex-direction: column;
+
+		@include opaque-hoverable;
+
+		&-icon {
+			color: $sidebar-icon-color;
+			font-size: 120px;
+			margin: 50px auto 50px;
+		}
+
+		&-amount {
+			color: $sidebar-text-color;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: $size-font-large;
+			> span {
+				background: $sidebar-icon-color;
+				width: 50px;
+				height: 50px;
+				border-radius: 25px;
+				display: flex;
+				flex: 1;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto 16px;
+			}
+		}
+	}
+
+	&-close {
+		position: absolute;
+		top: 0;
+		right: $sidebar-width;
+		left: 0;
+		height: 100px;
+		background: $color-mirage;
+		padding: 25px;
+		box-sizing: border-box;
+		button {
+			background: $sidebar-icon-color;
+			color: $sidebar-text-color;
+			border: none;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			@include opaque-hoverable;
+		}
+	}
+
+	&-content {
+		padding: 125px #{$sidebar-width + 50} 25px 50px;
+		height: 100%;
+		overflow-y: auto;
+		box-sizing: border-box;
+		> table {
+			width: 100%;
+			background: $color-white;
+			tr > th,
+			tr > td {
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				border-bottom: $color-mirage 16px solid;
+				padding: 16px;
+				text-align: left;
+				&.-item {
+					width: 50%;
+				}
+				&.-price {
+					min-width: 80px;
+				}
+				&.-qty {
+					min-width: 100px;
+				}
+				&.-total {
+					min-width: 100px
+				}
+				&.-remove {
+					width: 35px;
+				}
+				.buttons-wrapper {
+					display: flex;
+					justify-content: space-between;
+					.clear-button {
+					}
+					.checkout-button {
+						i {
+							font-size: 30px;
+						}
+					}
+				}
+			}
+			thead > tr {
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+			tfoot > tr {
+				text-transform: uppercase;
+				font-weight: bold;
+				td {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+
+	&.-expanded {
+		transform: translateX(0);
+		&-sidebar {
+			opacity: 1;
+		}
+	}
+}

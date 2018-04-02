@@ -1,0 +1,18 @@
+@import '../node_modules/flexboxgrid-sass/flexboxgrid';
+@import '../node_modules/normalize.css/normalize.css';
+@import '../node_modules/react-select/scss/default';
+@import 'vars';
+@import 'icons/css/moltin-cart-embedded.css';
+@import 'mixins';
+
+body {
+	color: $color-text-default;
+	font-size: $size-font-base;
+	letter-spacing: $size-letter-spacing-default;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+a {
+	color: $color-link-default;
+	@include opaque-hoverable;
+}

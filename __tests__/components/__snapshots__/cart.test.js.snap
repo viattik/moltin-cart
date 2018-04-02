@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Cart /> Cart renders without data 1`] = `
+<div
+  className="cart"
+>
+  <div
+    className="cart-content"
+  >
+    <table
+      cellPadding="0"
+      cellSpacing="0"
+    >
+      <thead>
+        <tr>
+          <th
+            className="-item"
+          >
+            Item
+          </th>
+          <th
+            className="-price"
+          >
+            Price
+          </th>
+          <th
+            className="-qty"
+          >
+            Qty
+          </th>
+          <th
+            className="-total"
+          >
+            Subtotal
+          </th>
+          <th
+            className="-remove"
+          />
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            colSpan={5}
+          >
+            No items in cart yet. Go get something!
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td
+            colSpan={3}
+          >
+            Total
+          </td>
+          <td
+            className="-total"
+            colSpan={2}
+          >
+            $0.00
+          </td>
+        </tr>
+        <tr>
+          <td
+            className="-buttons"
+            colSpan={5}
+          >
+            <div
+              className="buttons-wrapper"
+            >
+              <a
+                className="icon-link clear-button"
+                href=""
+                onClick={[Function]}
+              >
+                <i
+                  className="icon-delete-button"
+                />
+                Clear cart
+              </a>
+              <a
+                className="icon-link checkout-button"
+                href=""
+                onClick={[Function]}
+              >
+                <i
+                  className="icon-transport"
+                />
+                Checkout
+              </a>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <div
+    className="cart-sidebar"
+    onClick={[Function]}
+    tabIndex="0"
+  >
+    <i
+      className="cart-sidebar-icon icon-package-carrier"
+    />
+    <div
+      className="cart-sidebar-amount"
+    >
+      <span>
+        0
+      </span>
+      items
+    </div>
+  </div>
+  <div
+    className="cart-close"
+  >
+    <button
+      onClick={[Function]}
+    >
+      <i
+        className="icon-multiplication-sign"
+      />
+    </button>
+  </div>
+</div>
+`;
